@@ -1,0 +1,440 @@
+/* Style sheet for the site */
+:root {
+  --color1: #c00; /* var(--color1) */
+  --color2: red; /* var(--color2) */
+  --color3: black; /* var(--color3) */
+  --color4: orange; /* var(--color4) */
+  --color5: pink; /* var(--color5) */
+  --color6: navy; /* var(--color5) */
+  --color6: navy; /* var(--color5) */
+}
+html {
+  background: black;
+  color: red;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+/* this is the table that encloses the form*/
+#keeperblock {
+  color: var(--color1);
+  background-color: var(--color3);
+  border: solid 1px var(--color1);
+  text-align: center;
+  margin: auto;
+  margin-top: 40vh;
+}
+
+/* username & password input text boxes*/
+#keeperblock #ku,
+#kp {
+  border: solid 1px var(--color1);
+  font: normal 12px verdana;
+  width: 100;
+}
+
+/* cell that contains the text "save password"*/
+#keeperblock #ksp {
+  font: normal 11px arial;
+}
+
+/* sign-in button*/
+#keeperblock #kb {
+  color: var(--color1);
+  background-color: var(--color3);
+  border: solid 1px var(--color1);
+}
+
+/* div that contains the noscript blurb*/
+#keeperblock #kns {
+  display: inline;
+  color: var(--color1);
+  background-color: var(--color3);
+  font: normal 11px tahoma, sans-serif;
+}
+a {
+  color: pink;
+}
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.hidden {
+  display: none;
+}
+/* Nav-Bar */
+#nav-bar {
+  display: block;
+  background: red;
+  color: black !important;
+  padding: 10px;
+  text-align: center;
+}
+#header {
+  font-size: 100px;
+  /*   text-shadow: 5px 5px red; */
+}
+#toggle-button {
+  text-align: right;
+}
+#home,
+#delete{
+  margin-left: 25px;
+  margin-right: 25px;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+}
+#home:hover,
+#delete:hover{
+  /*   border: 4px solid orange; */
+  /*   padding: 5px; */
+  color: lightblue;
+}
+/* Changes Current Page Link */
+.current_tab {
+  color: orange !important;
+}
+a {
+  color: pink;
+  text-decoration: none;
+}
+body {
+  overflow: auto;
+}
+.header {
+  font-size: 30px;
+  font-weight: bold;
+}
+.logout {
+  border: red 3px solid;
+  position: absolute;
+  color: red;
+}
+.login {
+  border: red 3px solid;
+  padding: 10px;
+  position: absolute;
+  margin: 10px;
+  top: 0px;
+  right: 0px;
+  color: red;
+}
+.warning {
+  text-align: center;
+}
+.row {
+  margin: auto;
+}
+.header {
+  float: left;
+}
+td,
+th {
+  border: 0px solid black;
+  text-align: center;
+  padding: 8px;
+}
+::placeholder {
+  color: #c00;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  /*   background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: black; /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: black;
+  margin: 15% auto; /* 15% from the top and centered */
+  /*   padding: 20px; */
+  border: 1px solid #888;
+  text-align: center;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: grey;
+  float: right;
+  right: 0;
+  top: 0;
+  font-size: 28px;
+}
+.idle {
+  /*   border: var(--color1) 1px solid; */
+  position: absolute;
+  top: 0px !important;
+  padding: 0px !important;
+  left: 10px !important;
+  color: red;
+}
+.button {
+  border: red 3px solid;
+  padding: 10px;
+  position: absolute;
+  margin: 10px;
+  top: 0px;
+  right: 0px;
+  color: white;
+  background: black;
+}
+.close {
+  background: none;
+  color: white;
+  padding: 2px;
+  margin: 0px;
+  font-size: 15px;
+  margin: 5px;
+}
+.close:hover {
+  color: red;
+}
+button {
+  outline: none;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  /*   background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: black; /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: black;
+  margin: 15% auto; /* 15% from the top and centered */
+  /*   padding: 20px; */
+  border: 1px solid #888;
+  text-align: center;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: grey;
+  float: right;
+  right: 0;
+  top: 0;
+  font-size: 28px;
+}
+.idle {
+  /*   border: var(--color1) 1px solid; */
+  position: absolute;
+  top: 0px !important;
+  padding: 0px !important;
+  left: 10px !important;
+  color: red;
+}
+.button {
+  border: red 3px solid;
+  padding: 10px;
+  position: absolute;
+  margin: 10px;
+  top: 0px;
+  right: 0px;
+  color: white;
+  background: black;
+}
+.close {
+  background: none;
+  color: white;
+  padding: 2px;
+  margin: 0px;
+  font-size: 15px;
+  margin: 5px;
+}
+.close:hover {
+  color: red;
+}
+button {
+  outline: none;
+}
+a {
+  color: pink;
+}
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.hidden {
+  display: none;
+}
+/* Nav-Bar */
+#nav-bar {
+  display: block;
+  background: red;
+  color: black !important;
+  padding: 10px;
+  text-align: center;
+}
+#header {
+  text-align: center;
+  font-size: 100px;
+  /*   text-shadow: 5px 5px red; */
+}
+#toggle-button {
+  text-align: right;
+}
+#home {
+  margin-left: 25px;
+  margin-right: 25px;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+}
+#home:hover {
+  /*   border: 4px solid orange; */
+  /*   padding: 5px; */
+  color: lightblue;
+}
+/* Changes Current Page Link */
+.current_tab {
+  color: orange !important;
+}
+a {
+  color: pink;
+  text-decoration: none;
+}
+body {
+  overflow: auto;
+}
+.header {
+  font-size: 30px;
+  font-weight: bold;
+}
+.logout {
+  border: red 3px solid;
+  position: absolute;
+  color: red;
+}
+.login {
+  border: red 3px solid;
+  padding: 10px;
+  position: absolute;
+  margin: 10px;
+  top: 0px;
+  right: 0px;
+  color: red;
+}
+.warning {
+  text-align: center;
+}
+.row {
+  margin: auto;
+}
+.header {
+  float: left;
+}
+td,
+th {
+  border: 0px solid black;
+  text-align: center;
+  padding: 8px;
+}
+::placeholder {
+  color: white;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  /*   background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: black; /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: black;
+  margin: 15% auto; /* 15% from the top and centered */
+  /*   padding: 20px; */
+  border: 1px solid #888;
+  text-align: center;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: grey;
+  float: right;
+  right: 0;
+  top: 0;
+  font-size: 28px;
+}
+
+.idle {
+  /*   border: var(--color1) 1px solid; */
+  position: absolute;
+  top: 0px !important;
+  padding: 0px !important;
+  left: 10px !important;
+  color: red;
+}
+.button {
+  border: red 3px solid;
+  padding: 10px;
+  position: absolute;
+  margin: ;
+}
+.close:hover {
+  color: red;
+}
+
+button {
+  outline: none;
+}
+.button:hover {
+  color: red;
+}
+a:hover {
+  color: lightblue;
+}
+button:hover,
+input:hover,
+label:hover{
+  color: #c00;
+}
+input {
+  outline: none;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.section{height:100vh;}
