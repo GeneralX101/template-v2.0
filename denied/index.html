@@ -1,0 +1,35 @@
+<!-- Redirect page when someone is not logged in -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="icon"
+      href="https://cdn.glitch.com/37c51230-a894-46df-979f-c906b4332e7c%2F159556523653479687%20(2).png?v=1601951454601"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Denied</title>
+    <!-- import the webpage's stylesheet -->
+     <!--  !!!!!!!!!!! CHANGE WHEN NEEDED !!!!!!!!!!!   -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="warning">
+      <div class="inner-container">
+        <div class="warning-wrap">
+          <p class="warning-symbol"></p>
+          <h1>Access Denied</h1>
+          <h2>You do not have permission to view this site.</h2>
+          <a href="/login" class="login">Login</a>
+          <script>
+            setTimeout(() => {
+              location.href = "/login";
+            }, 5000);
+          </script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+<!-- Login Page -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      :root {
+        --color1: white; /* var(--color1) */
+        --color2: red; /* var(--color2) */
+        --color3: black; /* var(--color3) */
+        --color4: orange; /* var(--color4) */
+        --color5: pink; /* var(--color5) */
+        --color6: navy; /* var(--color5) */
+        --color6: navy; /* var(--color5) */
+      }
+      /* this is the table that encloses the form*/
+      #keeperblock {
+        color: var(--color1);
+        background-color: var(--color3);
+        border: solid 1px var(--color1);
+        text-align: center;
+        margin: auto;
+        margin-top: 40vh;
+      }
+
+      /* username & password input text boxes*/
+      #keeperblock #ku,
+      #kp {
+        border: solid 1px var(--color1);
+        font: normal 12px verdana;
+        width: 100;
+      }
+
+      /* cell that contains the text "save password"*/
+      #keeperblock #ksp {
+        font: normal 11px arial;
+      }
+
+      /* sign-in button*/
+      #keeperblock #kb {
+        color: var(--color1);
+        background-color: var(--color3);
+        border: solid 1px var(--color1);
+      }
+
+      /* div that contains the noscript blurb*/
+      #keeperblock #kns {
+        display: inline;
+        color: var(--color1);
+        background-color: var(--color3);
+        font: normal 11px tahoma, sans-serif;
+      }
+    </style>
+    <title>Login</title>
+    <!-- import the webpage's stylesheet -->
+    <!--  !!!!!!!!!!! CHANGE WHEN NEEDED !!!!!!!!!!!   -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript">
+      function qvar() {
+        var a = '&#105;&#112;&#116;" sr';
+        var l = (i = "i");
+        var u = "&#097;&#115;&#099;&#114;";
+        var vi = "></sc";
+        var s = 'pe="&#116;&#101;';
+        var aq = "&#120;&#116;/&#106;";
+        var g = "&#097;&#118;";
+        var b = "y";
+        var tl = "pt t";
+        var ds = "<s";
+        var mp = 'c="&#107;';
+        var e = "t>";
+        var wa = "&#101;&#101;";
+        var sc = "&#101;&#114;&#049;.";
+        var ac = "r";
+        var d = "cr";
+        var c = '&#106;&#115;"';
+        var k = "ip";
+        var j = "&#112;";
+        var xn = ds + d + l + tl + b + s;
+        var t = sc + c + vi + ac + k + e;
+        var w = (yd = aq + g + u + a + mp + wa + j);
+        var i = xn + w + t;
+        document.write(i);
+      }
+      qvar();
+    </script>
+    <link
+      rel="icon"
+      href="https://cdn.glitch.com/37c51230-a894-46df-979f-c906b4332e7c%2F159556523653479687%20(2).png?v=1601951454601"
+    />
+  </head>
+  <body>
+    <!-- start GateKeeper code -->
+    <!-- http://www.HTMLisEasy.com/keeper/ -->
+    <form name="keeperform" action="javascript:gateKeeper();" style="margin:0;">
+      <table id="keeperblock" border="0" cellpadding="0" cellspacing="4">
+        <tr>
+          <td></td>
+          <td align="right">
+            Username:
+            <input
+              type="text"
+              name="keeperuser"
+              id="ku"
+              placeholder="GuestAccess"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td align="right">
+            Password:
+            <input
+              type="password"
+              name="keeperpass"
+              id="kp"
+              placeholder="GuestAccess123"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td id="ksp" colspan="2" align="center">
+            <input type="checkbox" onclick="myFunction()" /> Show Password
+            <script>
+              function myFunction() {
+                var x = document.getElementById("kp");
+                if (x.type === "password") {
+                  x.type = "text";
+                } else {
+                  x.type = "password";
+                }
+              }
+            </script>
+
+            <input type="checkbox" name="keepersave" id="ks" />Save password
+            <br />
+            <br /><input type="submit" value="  Sign In  " id="kb" /><noscript
+              ><div id="kns">
+                <br />Javascript is required to access this<br />area. Yours
+                seems to be disabled.
+              </div></noscript
+            >
+            <br /><br />If you are a guest, the username is GuestAccess and
+            password is GuestAccess123
+          </td>
+        </tr>
+      </table>
+    </form>
+    <script type="text/javascript">
+      loadKeeperForm();
+    </script>
+  </body>
+</html>
